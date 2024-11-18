@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --global: #F2F2F2;
+    --text: #FFFFFF;
+    --first-color: #E28625;
+    --second-color: #006971;
+    --thirth-color: #004140;
+}
+
+img {
+    width: 64px;
+    height: 40px;
+    object-fit: cover;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: var(--global);
+    font-weight: bold;
+    font-size: 40px;
+    line-height: auto;
+    letter-spacing: 0px;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    opacity: 75%;
+    color: var(--text);
+    font-family: "Lexend Deca", sans-serif;
+}
+
+a {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--global);
+    border-radius: 24px;
+    text-decoration: none;
+    width: 60%;
+    text-align: center;
+    padding: 12px 32px;
+}
+
+body {
+    background-color: var(--global);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    width: 85%;
+}
+
+.sedans-container,
+.suvs-container,
+.luxury-container {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    padding: 48px;
+}
+
+.sedans-container {
+    border-radius: 8px 8px 0px 0px;
+    background-color: var(--first-color);
+}
+
+.sedans-container a {
+    color: var(--first-color);
+}
+
+.suvs-container {
+    background-color: var(--second-color);
+}
+
+.suvs-container a {
+    color: var(--second-color);
+}
+
+.luxury-container {
+    background-color: var(--thirth-color);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.luxury-container a {
+    color: var(--thirth-color);
+}
+
+.text-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+        width: 60%;
+    }
+
+    a {
+        width: 70%;
+    }
+
+    .sedans-container,
+    .suvs-container,
+    .luxury-container {
+        width: 33%;
+    }
+
+    .sedans-container {
+        border-radius: 8px;
+    }
+}
