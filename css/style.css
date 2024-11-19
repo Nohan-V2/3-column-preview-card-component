@@ -59,6 +59,7 @@ body {
 }
 
 main {
+    max-width: 328px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
